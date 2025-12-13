@@ -1,3 +1,11 @@
-# 统一特定文件换行符
-*.sh  text eol=lf
-*.bat text eol=crlf
+# @see https://docs.github.com/cn/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
+
+# 自动将所有基于文本的文件的行尾归一化（为LF）。
+* text=auto eol=lf
+
+# 声明在签出时总是以CRLF行结尾的文件。
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+
+# 表示所有真正的二进制文件，不应该被修改。
+*.{ico,png,jpg,jpeg,gif,webp,svg,woff,woff2} binary

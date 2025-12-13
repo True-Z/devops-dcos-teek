@@ -1,7 +1,23 @@
+import * as prettierPluginOxc from '@prettier/plugin-oxc'
+
 /**
- * @tutorial https://prettier.nodejs.cn/docs/en/configuration.html
+ * @see https://prettier.nodejs.cn/docs/en/options.html
+ * @type {import("prettier").Config}
  */
-module.exports = {
+const config = {
+  // 覆盖让你对某些文件扩展名、文件夹和特定文件有不同的配置
+  overrides: [
+    {
+      files: ['**/*.{js,mjs,cjs,jsx}'],
+      parser: 'oxc',
+      plugins: [prettierPluginOxc]
+    },
+    {
+      files: ['**/*.{ts,mts,cts,tsx}'],
+      parser: 'oxc-ts',
+      plugins: [prettierPluginOxc]
+    }
+  ],
   printWidth: 180, // 指定打印机将换行的行长
   tabWidth: 2, // 指定每个缩进级别的空格数
   useTabs: false, // 用制表符而不是空格缩进行
@@ -24,3 +40,4 @@ module.exports = {
   embeddedLanguageFormatting: 'auto', // 控制 Prettier 是否格式化嵌入文件中的引用代码
   singleAttributePerLine: false // 在 HTML、Vue 和 JSX 中每行强制执行一个属性
 }
+export default config
