@@ -1,5 +1,3 @@
-import * as prettierPluginOxc from '@prettier/plugin-oxc'
-
 /**
  * @see https://prettier.nodejs.cn/docs/en/options.html
  * @type {import("prettier").Config}
@@ -8,14 +6,11 @@ const config = {
   // 覆盖让你对某些文件扩展名、文件夹和特定文件有不同的配置
   overrides: [
     {
-      files: ['**/*.{js,mjs,cjs,jsx}'],
-      parser: 'oxc',
-      plugins: [prettierPluginOxc]
-    },
-    {
-      files: ['**/*.{ts,mts,cts,tsx}'],
-      parser: 'oxc-ts',
-      plugins: [prettierPluginOxc]
+      files: ['*.json5'],
+      options: {
+        quoteProps: 'preserve',
+        singleQuote: false
+      }
     }
   ],
   printWidth: 180, // 指定打印机将换行的行长
@@ -25,7 +20,7 @@ const config = {
   singleQuote: true, // 使用单引号而不是双引号
   quoteProps: 'as-needed', // 引用对象中的属性时更改
   jsxSingleQuote: true, // 在JSX中使用单引号而不是双引号
-  trailingComma: 'none', // 在多行逗号分隔的语法结构中尽可能打印尾随逗号
+  trailingComma: 'all', // 在多行逗号分隔的语法结构中尽可能打印尾随逗号
   bracketSpacing: true, // 打印对象文字中括号之间的空格
   bracketSameLine: true, // 将多行 HTML（HTML、JSX、Vue、Angular）元素的 > 放在最后一行的末尾，而不是单独放在下一行（不适用于自关闭元素）
   arrowParens: 'always', // 在唯一的箭头函数参数周围包括括号
@@ -36,7 +31,7 @@ const config = {
   proseWrap: 'preserve', // 默认情况下，Prettier 不会更改 markdown 文本中的换行
   htmlWhitespaceSensitivity: 'css', // 打印对象文字中括号之间的空格
   vueIndentScriptAndStyle: false, // 是否缩进 Vue 文件中 ＜script＞ 和 ＜style＞ 标记内的代码
-  endOfLine: 'lf', // 行结尾形式
+  endOfLine: 'auto', // 行结尾形式
   embeddedLanguageFormatting: 'auto', // 控制 Prettier 是否格式化嵌入文件中的引用代码
   singleAttributePerLine: false // 在 HTML、Vue 和 JSX 中每行强制执行一个属性
 }

@@ -34,7 +34,8 @@ export default defineConfig({
           { text: '后端', link: '/be-intro/' },
           { text: '数据库', link: '/db-intro/' },
           { text: '设计模式', link: '/designMode-intro/' },
-          { text: '算法', link: '/algorithm-intro/' }
+          { text: '算法', link: '/algorithm-intro/' },
+          { text: '解决方案', link: '/solution/' }
         ]
       },
       {
@@ -58,6 +59,10 @@ export default defineConfig({
           { text: '计算机基础', link: '/computer-intro/' },
           { text: '输入法', link: '/inputMethod-intro/' }
         ]
+      },
+      {
+        text: '脚本',
+        items: [{ text: '工具', link: '/script-intro/' }]
       },
       {
         text: '汇总功能',
