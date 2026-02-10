@@ -7,6 +7,9 @@ const description = [
   'Teek 拥有三种典型的知识管理形态：结构化、碎片化、体系化，可以轻松构建一个结构化知识库，适用个人博客、文档站、知识库等场景',
 ].toString()
 
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1]
+const base = process.env.GITHUB_ACTIONS && repoName ? `/${repoName}/` : '/'
+
 /**
  * VitePress 配置
  *
@@ -15,7 +18,7 @@ const description = [
 export default defineConfig({
   extends: teekConfig,
   // ? 站点配置
-  base: '/devops/',
+  base,
   srcDir: './docs',
 
   // ? frontmatter 配置
