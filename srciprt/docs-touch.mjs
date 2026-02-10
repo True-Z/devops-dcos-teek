@@ -10,14 +10,21 @@ function nowString() {
 
 function usage() {
   console.log('Usage:')
+  console.log('  pnpm docs:touch')
   console.log('  pnpm docs:touch docs/xx/yy.md')
   console.log('  pnpm docs:touch --changed')
+  console.log('  pnpm docs:touch --since HEAD~1')
+  console.log('  pnpm docs:touch --since HEAD~3..HEAD')
   console.log('  pnpm docs:touch docs/a.md docs/b.md --changed')
 }
 
 function getChangedDocFiles() {
   const files = new Set()
-  const commands = ['git diff --name-only -- docs', 'git diff --name-only --cached -- docs', 'git ls-files --others --exclude-standard -- docs']
+  const commands = [
+    'git -c core.quotepath=off diff --name-only -- docs',
+    'git -c core.quotepath=off diff --name-only --cached -- docs',
+    'git -c core.quotepath=off ls-files --others --exclude-standard -- docs',
+  ]
 
   for (const command of commands) {
     const out = execSync(command, { encoding: 'utf8' }).trim()
@@ -25,6 +32,20 @@ function getChangedDocFiles() {
     for (const line of out.split(/\r?\n/)) {
       if (line && line.endsWith('.md')) files.add(line)
     }
+  }
+
+  return [...files]
+}
+
+function getDocFilesSince(revision) {
+  const files = new Set()
+  const range = revision.includes('..') ? revision : `${revision}..HEAD`
+  const command = `git -c core.quotepath=off diff --name-only ${range} -- docs`
+  const out = execSync(command, { encoding: 'utf8' }).trim()
+  if (!out) return []
+
+  for (const line of out.split(/\r?\n/)) {
+    if (line && line.endsWith('.md')) files.add(line)
   }
 
   return [...files]
@@ -78,18 +99,39 @@ function main() {
     process.exit(0)
   }
 
-  const changedMode = args.includes('--changed')
-  const directTargets = args.filter((arg) => !arg.startsWith('--'))
+  const sinceEqArg = args.find((arg) => arg.startsWith('--since='))
+  const sinceArgIndex = args.findIndex((arg) => arg === '--since')
+  const sinceValue = sinceEqArg ? sinceEqArg.slice('--since='.length) : sinceArgIndex >= 0 ? args[sinceArgIndex + 1] : ''
 
-  const allTargets = new Set(normalizeTargets(directTargets))
+  if (sinceArgIndex >= 0 && !sinceValue) {
+    console.error('Missing revision after --since')
+    usage()
+    process.exit(1)
+  }
+
+  const changedMode = args.includes('--changed') || args.length === 0
+  const sinceMode = Boolean(sinceValue)
+  const directTargets = args.filter((arg) => !arg.startsWith('--'))
+  const normalizedDirectTargets = sinceArgIndex >= 0 ? directTargets.filter((arg) => arg !== sinceValue) : directTargets
+
+  const allTargets = new Set(normalizeTargets(normalizedDirectTargets))
   if (changedMode) {
     for (const file of getChangedDocFiles()) allTargets.add(file)
   }
 
+  if (sinceMode) {
+    try {
+      for (const file of getDocFilesSince(sinceValue)) allTargets.add(file)
+    } catch (error) {
+      console.error(`Failed to resolve --since ${sinceValue}`)
+      console.error(String(error.message || error))
+      process.exit(1)
+    }
+  }
+
   if (!allTargets.size) {
-    console.error('No target files found.')
-    usage()
-    process.exit(1)
+    console.log('No target files found, nothing to update.')
+    process.exit(0)
   }
 
   const files = [...allTargets].filter(isValidDocsMarkdown)

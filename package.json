@@ -5,10 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "commit:mixin": "git add . && cz",
+    "commit:mixin": "pnpm docs:touch && git add . && cz",
     "prettier": "prettier --ignore-path .gitignore --write --cache .",
     "docs:check": "node ./srciprt/docs-style-check.mjs",
     "docs:touch": "node ./srciprt/docs-touch.mjs",
+    "docs:touch:last": "node ./srciprt/docs-touch.mjs --since HEAD~1",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
