@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /guide/quickstart
+      link: /articleOverview
     - theme: alt
-      text: 配置
-      link: /reference/config
+      text: 归档
+      link: /archives
   image:
     src: /teek-logo-large.png
     alt: Teek

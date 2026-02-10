@@ -28,3 +28,4 @@ dist-ssr
 
 # Custom
 /**/.vitepress/cache/*
+/**/.vitepress/dist/*
