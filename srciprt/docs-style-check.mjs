@@ -60,6 +60,7 @@ function scan() {
 
   const issues = {
     noFrontmatter: [],
+    frontmatterUnsafeAtValue: [],
     duplicatePermalink: [],
     catalogueTitleMismatch: [],
     introMissingKeys: [],
@@ -75,6 +76,19 @@ function scan() {
     if (!doc.frontmatter) {
       issues.noFrontmatter.push(doc.file)
       continue
+    }
+
+    const frontmatterMatch = doc.content.match(/^---\n([\s\S]*?)\n---\n?/)
+    if (frontmatterMatch) {
+      const lines = frontmatterMatch[1].split(/\r?\n/)
+      for (let i = 0; i < lines.length; i += 1) {
+        // YAML treats '@' as a reserved indicator in plain scalars.
+        // Force quoting to avoid parser errors in frontmatter.
+        if (/^\s*-\s*@\S+/.test(lines[i])) {
+          const lineNo = i + 2
+          issues.frontmatterUnsafeAtValue.push(`${doc.file}:${lineNo} -> ${lines[i].trim()}`)
+        }
+      }
     }
 
     const permalink = doc.frontmatter.permalink
