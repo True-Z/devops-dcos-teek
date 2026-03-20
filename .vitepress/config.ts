@@ -35,7 +35,7 @@ export default defineConfig({
       {
         text: '编程',
         items: [
-          { text: '前端', link: '/fe-intro/' },
+          { text: '前端', link: '/fe/' },
           { text: '后端', link: '/be-intro/' },
           { text: '数据库', link: '/db-intro/' },
           { text: '设计模式', link: '/designMode-intro/' },
@@ -63,6 +63,7 @@ export default defineConfig({
         items: [
           { text: '计算机基础', link: '/computer-intro/' },
           { text: '输入法', link: '/inputMethod-intro/' },
+          { text: '语言', link: '/language-intro/' },
         ],
       },
       {

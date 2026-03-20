@@ -47,6 +47,58 @@ function parseFrontmatter(content) {
   return fm
 }
 
+function hasReadingSection(content) {
+  return /^##\s+(延伸阅读|推荐阅读)/m.test(content)
+}
+
+function hasNonEmptyReadingSection(content) {
+  const match = content.match(/^##\s+(延伸阅读|推荐阅读)\r?\n([\s\S]*)$/m)
+  if (!match) return false
+  return /^-\s+/m.test(match[2])
+}
+
+function shouldRequireReadingSection(file) {
+  return file !== 'docs/index.md'
+}
+
+function shouldRequireExamples(file, frontmatter) {
+  if (!frontmatter?.title) return false
+  if (file.startsWith('docs/@pages/')) return false
+  if (!file.startsWith('docs/01.前端/')) return false
+
+  const baseName = path.basename(file)
+  if (baseName === '00.目录.md') return false
+  if (baseName === '00.简介.md') return false
+
+  return /要点|策略|方案|详解|手册|集合/.test(frontmatter.title)
+}
+
+function hasExecutableExample(content) {
+  return /^##\s+最小示例/m.test(content) || /```[a-zA-Z]+\n[\s\S]*?```/.test(content)
+}
+
+function shouldRequireReadingGuide(file, frontmatter, content) {
+  if (!frontmatter?.title) return false
+  if (file.startsWith('docs/@pages/')) return false
+  return content.split(/\r?\n/).length >= 180
+}
+
+function hasReadingGuide(content) {
+  return /^##\s+阅读建议/m.test(content) || /^##\s+最小使用路径/m.test(content)
+}
+
+const commonTypoPatterns = [
+  { pattern: /\bDiscription\b/g, replacement: 'Description' },
+  { pattern: /\brebese\b/g, replacement: 'rebase' },
+  { pattern: /\borigon\b/g, replacement: 'origin' },
+  { pattern: /\bmatser\b/g, replacement: 'master' },
+  { pattern: /\bpostMeesage\b/g, replacement: 'postMessage' },
+  { pattern: /Availble/g, replacement: 'Available' },
+  { pattern: /流览器/g, replacement: '浏览器' },
+  { pattern: /\.asstes\b/g, replacement: '.assets' },
+  { pattern: /DataGaip/g, replacement: 'DataGrip' },
+]
+
 function scan() {
   const files = walkMarkdownFiles(docsRoot)
   const docs = files.map((filePath) => {
@@ -65,6 +117,11 @@ function scan() {
     catalogueTitleMismatch: [],
     introMissingKeys: [],
     introTitleNotIntro: [],
+    missingReadingSection: [],
+    emptyReadingSection: [],
+    missingExecutableExample: [],
+    longDocMissingGuide: [],
+    commonTypo: [],
     permalinkTrailingSlash: [],
     brokenInternalLinks: [],
     navUncoveredTopDirs: [],
@@ -111,6 +168,29 @@ function scan() {
 
   for (const doc of docs) {
     const baseName = path.basename(doc.file)
+
+    if (shouldRequireReadingSection(doc.file) && !hasReadingSection(doc.content)) {
+      issues.missingReadingSection.push(doc.file)
+    }
+
+    if (shouldRequireReadingSection(doc.file) && hasReadingSection(doc.content) && !hasNonEmptyReadingSection(doc.content)) {
+      issues.emptyReadingSection.push(doc.file)
+    }
+
+    if (shouldRequireExamples(doc.file, doc.frontmatter) && !hasExecutableExample(doc.content)) {
+      issues.missingExecutableExample.push(doc.file)
+    }
+
+    if (shouldRequireReadingGuide(doc.file, doc.frontmatter, doc.content) && !hasReadingGuide(doc.content)) {
+      issues.longDocMissingGuide.push(doc.file)
+    }
+
+    for (const typo of commonTypoPatterns) {
+      if (typo.pattern.test(doc.content)) {
+        issues.commonTypo.push(`${doc.file} -> ${String(typo.pattern)} => ${typo.replacement}`)
+      }
+      typo.pattern.lastIndex = 0
+    }
 
     if (baseName === '00.目录.md' && doc.frontmatter) {
       const dirName = path.basename(path.dirname(doc.file)).replace(/^\d+\./, '')
@@ -162,13 +242,15 @@ function scan() {
       .map((entry) => entry.name)
 
     for (const dir of topDirs) {
-      const introPath = path.join(docsRoot, dir, '00.简介.md')
-      if (!fs.existsSync(introPath)) continue
+      const candidates = ['00.简介.md', '00.目录.md']
+        .map((fileName) => path.join(docsRoot, dir, fileName))
+        .filter((filePath) => fs.existsSync(filePath))
+        .map((filePath) => parseFrontmatter(readFile(filePath)))
+        .map((fm) => (typeof fm?.permalink === 'string' ? fm.permalink.replace(/\/$/, '') : ''))
+        .filter(Boolean)
 
-      const fm = parseFrontmatter(readFile(introPath))
-      const permalink = typeof fm?.permalink === 'string' ? fm.permalink.replace(/\/$/, '') : ''
-      if (permalink && !navLinks.has(permalink)) {
-        issues.navUncoveredTopDirs.push(`${dir} (${permalink})`)
+      if (candidates.length && !candidates.some((permalink) => navLinks.has(permalink))) {
+        issues.navUncoveredTopDirs.push(`${dir} (${candidates.join(' | ')})`)
       }
     }
   }
