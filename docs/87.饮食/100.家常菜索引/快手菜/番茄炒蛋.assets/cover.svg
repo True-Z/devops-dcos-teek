@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="番茄炒蛋 cover">
+  <rect width="360" height="200" rx="20" fill="#fbf1ea"/>
+  <ellipse cx="180" cy="110" rx="118" ry="56" fill="#f3f4f6"/>
+  <ellipse cx="180" cy="110" rx="92" ry="38" fill="#fff"/>
+  <circle cx="150" cy="102" r="20" fill="#df5f4a"/>
+  <circle cx="194" cy="116" r="18" fill="#f0cf63"/>
+  <circle cx="220" cy="94" r="14" fill="#e56b52"/>
+</svg>

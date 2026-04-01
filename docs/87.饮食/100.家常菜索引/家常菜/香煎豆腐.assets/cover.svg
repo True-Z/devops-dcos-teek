@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="香煎豆腐 cover">
+  <rect width="360" height="200" rx="20" fill="#f7f1e8"/>
+  <ellipse cx="180" cy="110" rx="118" ry="56" fill="#f3f4f6"/>
+  <ellipse cx="180" cy="110" rx="92" ry="38" fill="#fff"/>
+  <rect x="136" y="92" width="28" height="18" rx="4" fill="#e0b66f"/>
+  <rect x="170" y="110" width="28" height="18" rx="4" fill="#d6aa61"/>
+  <rect x="204" y="94" width="28" height="18" rx="4" fill="#c99d55"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="麻婆豆腐 cover">
+  <rect width="360" height="200" rx="20" fill="#f8eee8"/>
+  <ellipse cx="180" cy="110" rx="118" ry="56" fill="#f3f4f6"/>
+  <ellipse cx="180" cy="110" rx="92" ry="38" fill="#fff"/>
+  <rect x="124" y="84" width="38" height="24" rx="5" fill="#f6e1bf"/>
+  <rect x="170" y="92" width="38" height="24" rx="5" fill="#f9e6c9"/>
+  <rect x="150" y="114" width="38" height="24" rx="5" fill="#f6ddbd"/>
+  <circle cx="198" cy="104" r="26" fill="none" stroke="#b44c36" stroke-width="10"/>
+</svg>

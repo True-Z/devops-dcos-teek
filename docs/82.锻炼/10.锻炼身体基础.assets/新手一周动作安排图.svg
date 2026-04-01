@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
+  <rect width="960" height="620" fill="#f7f6f2"/>
+  <text x="480" y="48" text-anchor="middle" font-size="28" font-family="Arial, sans-serif" fill="#263238">新手一周动作安排图</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="60" y="100" width="120" height="180" rx="18" fill="#fff" stroke="#5c9ead" stroke-width="3"/>
+    <text x="120" y="138" text-anchor="middle" font-size="20" fill="#1d4e69">周一</text>
+    <text x="120" y="180" text-anchor="middle" font-size="16" fill="#333">热身</text>
+    <text x="120" y="210" text-anchor="middle" font-size="16" fill="#333">深蹲</text>
+    <text x="120" y="240" text-anchor="middle" font-size="16" fill="#333">俯卧撑</text>
+
+    <rect x="195" y="100" width="120" height="180" rx="18" fill="#fff" stroke="#6a994e" stroke-width="3"/>
+    <text x="255" y="138" text-anchor="middle" font-size="20" fill="#3a5f23">周二</text>
+    <text x="255" y="180" text-anchor="middle" font-size="16" fill="#333">轻松跑</text>
+    <text x="255" y="210" text-anchor="middle" font-size="16" fill="#333">或快走</text>
+    <text x="255" y="240" text-anchor="middle" font-size="16" fill="#333">拉伸</text>
+
+    <rect x="330" y="100" width="120" height="180" rx="18" fill="#fff" stroke="#8f6bb3" stroke-width="3"/>
+    <text x="390" y="138" text-anchor="middle" font-size="20" fill="#52306f">周三</text>
+    <text x="390" y="180" text-anchor="middle" font-size="16" fill="#333">核心</text>
+    <text x="390" y="210" text-anchor="middle" font-size="16" fill="#333">平板</text>
+    <text x="390" y="240" text-anchor="middle" font-size="16" fill="#333">恢复</text>
+
+    <rect x="465" y="100" width="120" height="180" rx="18" fill="#fff" stroke="#b56576" stroke-width="3"/>
+    <text x="525" y="138" text-anchor="middle" font-size="20" fill="#742635">周四</text>
+    <text x="525" y="180" text-anchor="middle" font-size="16" fill="#333">休息</text>
+    <text x="525" y="210" text-anchor="middle" font-size="16" fill="#333">活动</text>
+    <text x="525" y="240" text-anchor="middle" font-size="16" fill="#333">拉伸</text>
+
+    <rect x="600" y="100" width="120" height="180" rx="18" fill="#fff" stroke="#c08552" stroke-width="3"/>
+    <text x="660" y="138" text-anchor="middle" font-size="20" fill="#7a4e21">周五</text>
+    <text x="660" y="180" text-anchor="middle" font-size="16" fill="#333">箭步蹲</text>
+    <text x="660" y="210" text-anchor="middle" font-size="16" fill="#333">臀桥</text>
+    <text x="660" y="240" text-anchor="middle" font-size="16" fill="#333">平板</text>
+
+    <rect x="735" y="100" width="120" height="180" rx="18" fill="#fff" stroke="#84a98c" stroke-width="3"/>
+    <text x="795" y="138" text-anchor="middle" font-size="20" fill="#2f5d50">周六</text>
+    <text x="795" y="180" text-anchor="middle" font-size="16" fill="#333">羽毛球</text>
+    <text x="795" y="210" text-anchor="middle" font-size="16" fill="#333">或跑步</text>
+    <text x="795" y="240" text-anchor="middle" font-size="16" fill="#333">放松</text>
+
+    <rect x="398" y="340" width="164" height="190" rx="18" fill="#fff" stroke="#457b9d" stroke-width="3"/>
+    <text x="480" y="380" text-anchor="middle" font-size="22" fill="#1d4e69">周日</text>
+    <text x="480" y="420" text-anchor="middle" font-size="16" fill="#333">散步 / 拉伸</text>
+    <text x="480" y="450" text-anchor="middle" font-size="16" fill="#333">记录本周身体反馈</text>
+    <text x="480" y="480" text-anchor="middle" font-size="16" fill="#333">为下周调整</text>
+  </g>
+</svg>

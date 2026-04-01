@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="青椒炒蛋 cover">
+  <rect width="360" height="200" rx="20" fill="#eef7ec"/>
+  <ellipse cx="180" cy="110" rx="118" ry="56" fill="#f3f4f6"/>
+  <ellipse cx="180" cy="110" rx="92" ry="38" fill="#fff"/>
+  <path d="M126 106 C148 90, 178 94, 216 118" stroke="#67ad4d" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <circle cx="194" cy="98" r="16" fill="#f0d56b"/>
+</svg>

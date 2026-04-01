@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
+  <rect width="960" height="620" fill="#f7f7f2"/>
+  <text x="480" y="48" text-anchor="middle" font-size="28" font-family="Arial, sans-serif" fill="#263238">基础动作示例</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="60" y="90" width="380" height="220" rx="18" fill="#fff" stroke="#d6a34d" stroke-width="3"/>
+    <text x="250" y="124" text-anchor="middle" font-size="22" fill="#7c5313">深蹲</text>
+    <circle cx="150" cy="160" r="16" fill="#f0c9a4" stroke="#444" stroke-width="2"/>
+    <line x1="150" y1="176" x2="150" y2="226" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="150" y1="190" x2="125" y2="210" stroke="#444" stroke-width="7" stroke-linecap="round"/>
+    <line x1="150" y1="190" x2="175" y2="210" stroke="#444" stroke-width="7" stroke-linecap="round"/>
+    <line x1="150" y1="226" x2="128" y2="266" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="150" y1="226" x2="178" y2="266" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+    <text x="245" y="170" font-size="17" fill="#333">臀部向后坐</text>
+    <text x="245" y="198" font-size="17" fill="#333">膝盖方向跟脚尖一致</text>
+    <text x="245" y="226" font-size="17" fill="#333">起身时脚掌稳踩地面</text>
+    <text x="245" y="266" font-size="16" fill="#666">主要部位：腿部、臀部、核心</text>
+
+    <rect x="520" y="90" width="380" height="220" rx="18" fill="#fff" stroke="#5c9ead" stroke-width="3"/>
+    <text x="710" y="124" text-anchor="middle" font-size="22" fill="#1c5a67">俯卧撑</text>
+    <circle cx="610" cy="170" r="14" fill="#f0c9a4" stroke="#444" stroke-width="2"/>
+    <line x1="624" y1="176" x2="710" y2="198" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="710" y1="198" x2="785" y2="210" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="665" y1="188" x2="646" y2="224" stroke="#444" stroke-width="7" stroke-linecap="round"/>
+    <line x1="770" y1="206" x2="752" y2="244" stroke="#444" stroke-width="7" stroke-linecap="round"/>
+    <text x="705" y="170" font-size="17" fill="#333">身体尽量保持一条线</text>
+    <text x="705" y="198" font-size="17" fill="#333">手放肩两侧，缓慢下去</text>
+    <text x="705" y="226" font-size="17" fill="#333">推起时不要塌腰</text>
+    <text x="705" y="266" font-size="16" fill="#666">主要部位：胸、肩、手臂、核心</text>
+
+    <rect x="60" y="350" width="380" height="220" rx="18" fill="#fff" stroke="#8f6bb3" stroke-width="3"/>
+    <text x="250" y="384" text-anchor="middle" font-size="22" fill="#52306f">平板支撑</text>
+    <circle cx="130" cy="428" r="14" fill="#f0c9a4" stroke="#444" stroke-width="2"/>
+    <line x1="144" y1="434" x2="248" y2="452" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="248" y1="452" x2="328" y2="458" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="180" y1="442" x2="174" y2="476" stroke="#444" stroke-width="7" stroke-linecap="round"/>
+    <line x1="310" y1="456" x2="304" y2="490" stroke="#444" stroke-width="7" stroke-linecap="round"/>
+    <text x="245" y="428" font-size="17" fill="#333">收紧腹部，不塌腰</text>
+    <text x="245" y="456" font-size="17" fill="#333">身体尽量保持平直</text>
+    <text x="245" y="484" font-size="17" fill="#333">先求标准，再求时长</text>
+    <text x="245" y="524" font-size="16" fill="#666">主要部位：核心、肩部稳定</text>
+
+    <rect x="520" y="350" width="380" height="220" rx="18" fill="#fff" stroke="#6a994e" stroke-width="3"/>
+    <text x="710" y="384" text-anchor="middle" font-size="22" fill="#3a5f23">箭步蹲</text>
+    <circle cx="620" cy="420" r="16" fill="#f0c9a4" stroke="#444" stroke-width="2"/>
+    <line x1="620" y1="436" x2="620" y2="486" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="620" y1="450" x2="595" y2="470" stroke="#444" stroke-width="7" stroke-linecap="round"/>
+    <line x1="620" y1="450" x2="645" y2="470" stroke="#444" stroke-width="7" stroke-linecap="round"/>
+    <line x1="620" y1="486" x2="590" y2="534" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="620" y1="486" x2="675" y2="512" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+    <text x="715" y="432" font-size="17" fill="#333">前脚踩稳，后腿自然下沉</text>
+    <text x="715" y="460" font-size="17" fill="#333">躯干保持稳定，不前扑</text>
+    <text x="715" y="488" font-size="17" fill="#333">左右腿都要练</text>
+    <text x="715" y="528" font-size="16" fill="#666">主要部位：腿部、臀部、平衡稳定</text>
+  </g>
+</svg>

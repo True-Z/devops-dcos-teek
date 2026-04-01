@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="120" viewBox="0 0 520 120" role="img" aria-label="凉拌土豆丝 steps">
+  <rect width="520" height="120" rx="16" fill="#fbf7f2"/>
+  <rect x="24" y="34" width="96" height="52" rx="10" fill="#f7e9d2"/><text x="72" y="65" text-anchor="middle" font-size="16" fill="#5a4338">切丝泡水</text>
+  <rect x="150" y="34" width="96" height="52" rx="10" fill="#ead9bf"/><text x="198" y="65" text-anchor="middle" font-size="16" fill="#5a4338">焯水过凉</text>
+  <rect x="276" y="34" width="96" height="52" rx="10" fill="#eee8da"/><text x="324" y="65" text-anchor="middle" font-size="16" fill="#5a5042">加料汁</text>
+  <rect x="402" y="34" width="96" height="52" rx="10" fill="#f4c7b6"/><text x="450" y="65" text-anchor="middle" font-size="16" fill="#7a3f30">泼辣油拌匀</text>
+</svg>

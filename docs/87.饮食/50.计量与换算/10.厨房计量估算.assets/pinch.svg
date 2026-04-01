@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="pinch illustration">
+  <rect width="320" height="180" rx="18" fill="#f8f1e8"/>
+  <path d="M120 118 C130 84, 146 70, 160 80 C172 88, 176 108, 170 126" fill="#d8ad84"/>
+  <path d="M172 126 C184 92, 206 78, 220 90 C230 98, 230 116, 220 132" fill="#c9976d"/>
+  <circle cx="164" cy="74" r="4" fill="#ffffff"/>
+  <circle cx="170" cy="68" r="3" fill="#ffffff"/>
+  <circle cx="176" cy="74" r="3" fill="#ffffff"/>
+</svg>

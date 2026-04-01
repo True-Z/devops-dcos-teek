@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="spatula illustration">
+  <rect width="320" height="180" rx="18" fill="#eef5f2"/>
+  <rect x="74" y="84" width="116" height="26" rx="8" fill="#8ea7a0" transform="rotate(-20 74 84)"/>
+  <path d="M187 61 L263 34 L272 58 L196 86 Z" fill="#4f5966"/>
+  <rect x="219" y="40" width="8" height="32" rx="3" fill="#eef5f2" transform="rotate(-20 219 40)"/>
+</svg>

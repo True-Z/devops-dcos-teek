@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160" role="img" aria-labelledby="title desc">
+  <title id="title">称人结示意图</title>
+  <desc id="desc">绳端形成固定圈的称人结示意图。</desc>
+  <rect width="320" height="160" rx="16" fill="#f2f2fa"/>
+  <ellipse cx="92" cy="80" rx="54" ry="42" fill="none" stroke="#5761b2" stroke-width="10"/>
+  <path d="M142 82 C164 82, 174 56, 198 56 C226 56, 232 102, 204 102 C180 102, 170 82, 150 82" fill="none" stroke="#7d86d8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M204 102 C228 102, 244 102, 286 102" fill="none" stroke="#5761b2" stroke-width="14" stroke-linecap="round"/>
+</svg>

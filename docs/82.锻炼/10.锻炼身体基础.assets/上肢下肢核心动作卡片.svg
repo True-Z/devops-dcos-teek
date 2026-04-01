@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
+  <rect width="960" height="620" fill="#f6f7f3"/>
+  <text x="480" y="48" text-anchor="middle" font-size="28" font-family="Arial, sans-serif" fill="#263238">上肢 / 下肢 / 核心 动作卡片</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="60" y="100" width="260" height="430" rx="20" fill="#fff" stroke="#5c9ead" stroke-width="3"/>
+    <text x="190" y="138" text-anchor="middle" font-size="24" fill="#1d4e69">上肢</text>
+    <text x="90" y="188" font-size="18" fill="#333">动作 1：俯卧撑</text>
+    <text x="90" y="220" font-size="16" fill="#555">主要部位：胸、肩、手臂</text>
+    <text x="90" y="252" font-size="16" fill="#555">建议：2 到 3 组，8 到 12 次</text>
+    <text x="90" y="300" font-size="18" fill="#333">动作 2：弹力带划船</text>
+    <text x="90" y="332" font-size="16" fill="#555">主要部位：背部、后肩</text>
+    <text x="90" y="364" font-size="16" fill="#555">建议：2 到 3 组，10 到 15 次</text>
+    <text x="90" y="412" font-size="18" fill="#333">动作 3：墙推</text>
+    <text x="90" y="444" font-size="16" fill="#555">适合入门和动作找感觉</text>
+
+    <rect x="350" y="100" width="260" height="430" rx="20" fill="#fff" stroke="#6a994e" stroke-width="3"/>
+    <text x="480" y="138" text-anchor="middle" font-size="24" fill="#3a5f23">下肢</text>
+    <text x="380" y="188" font-size="18" fill="#333">动作 1：深蹲</text>
+    <text x="380" y="220" font-size="16" fill="#555">主要部位：腿部、臀部</text>
+    <text x="380" y="252" font-size="16" fill="#555">建议：2 到 3 组，8 到 12 次</text>
+    <text x="380" y="300" font-size="18" fill="#333">动作 2：箭步蹲</text>
+    <text x="380" y="332" font-size="16" fill="#555">主要部位：腿部、平衡稳定</text>
+    <text x="380" y="364" font-size="16" fill="#555">建议：左右腿各 8 到 10 次</text>
+    <text x="380" y="412" font-size="18" fill="#333">动作 3：臀桥</text>
+    <text x="380" y="444" font-size="16" fill="#555">适合激活臀部和后侧链</text>
+
+    <rect x="640" y="100" width="260" height="430" rx="20" fill="#fff" stroke="#8f6bb3" stroke-width="3"/>
+    <text x="770" y="138" text-anchor="middle" font-size="24" fill="#52306f">核心</text>
+    <text x="670" y="188" font-size="18" fill="#333">动作 1：平板支撑</text>
+    <text x="670" y="220" font-size="16" fill="#555">主要部位：腹部、肩部稳定</text>
+    <text x="670" y="252" font-size="16" fill="#555">建议：20 到 40 秒，2 到 3 组</text>
+    <text x="670" y="300" font-size="18" fill="#333">动作 2：死虫</text>
+    <text x="670" y="332" font-size="16" fill="#555">主要部位：深层核心控制</text>
+    <text x="670" y="364" font-size="16" fill="#555">建议：每侧 8 到 10 次</text>
+    <text x="670" y="412" font-size="18" fill="#333">动作 3：鸟狗</text>
+    <text x="670" y="444" font-size="16" fill="#555">适合练稳定和平衡</text>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160" role="img" aria-labelledby="title desc">
+  <title id="title">双套结示意图</title>
+  <desc id="desc">绳索绕杆两圈交叉固定的双套结示意图。</desc>
+  <rect width="320" height="160" rx="16" fill="#f6efe7"/>
+  <rect x="138" y="22" width="44" height="116" rx="18" fill="#9b7c63"/>
+  <path d="M42 60 C82 60, 96 40, 122 40 C152 40, 156 60, 182 60 C208 60, 220 42, 278 42" fill="none" stroke="#d07a45" stroke-width="12" stroke-linecap="round"/>
+  <path d="M42 100 C82 100, 96 120, 122 120 C152 120, 156 100, 182 100 C208 100, 220 118, 278 118" fill="none" stroke="#b55e2f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M122 40 C146 52, 146 108, 122 120" fill="none" stroke="#8f4b26" stroke-width="8"/>
+  <path d="M182 60 C158 68, 158 92, 182 100" fill="none" stroke="#8f4b26" stroke-width="8"/>
+</svg>

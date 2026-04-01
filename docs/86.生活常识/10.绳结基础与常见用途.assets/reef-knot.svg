@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160" role="img" aria-labelledby="title desc">
+  <title id="title">平结示意图</title>
+  <desc id="desc">两端绳索相互交叉后形成对称收束的平结示意图。</desc>
+  <rect width="320" height="160" rx="16" fill="#f8f3eb"/>
+  <path d="M34 58 C74 58, 98 92, 128 92 S180 52, 210 52 C236 52, 250 68, 286 68" fill="none" stroke="#bf6f3f" stroke-width="14" stroke-linecap="round"/>
+  <path d="M34 104 C74 104, 98 68, 128 68 S180 108, 210 108 C236 108, 250 92, 286 92" fill="none" stroke="#d8a06d" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="160" cy="80" r="28" fill="none" stroke="#8d5230" stroke-width="8" opacity="0.8"/>
+</svg>

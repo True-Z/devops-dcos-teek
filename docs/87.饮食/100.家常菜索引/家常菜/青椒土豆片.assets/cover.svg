@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="青椒土豆片 cover">
+  <rect width="360" height="200" rx="20" fill="#f8f2e8"/>
+  <ellipse cx="180" cy="110" rx="118" ry="56" fill="#f3f4f6"/>
+  <ellipse cx="180" cy="110" rx="92" ry="38" fill="#fff"/>
+  <ellipse cx="156" cy="106" rx="18" ry="10" fill="#d9be72"/>
+  <ellipse cx="188" cy="96" rx="18" ry="10" fill="#ccb164"/>
+  <rect x="206" y="104" width="20" height="14" rx="4" fill="#6fad56"/>
+</svg>

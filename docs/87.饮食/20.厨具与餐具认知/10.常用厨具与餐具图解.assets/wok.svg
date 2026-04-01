@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="wok illustration">
+  <rect width="320" height="180" rx="18" fill="#f6efe7"/>
+  <ellipse cx="130" cy="105" rx="80" ry="42" fill="#39414d"/>
+  <ellipse cx="130" cy="95" rx="64" ry="28" fill="#596273"/>
+  <path d="M205 88 L290 72" stroke="#7f5b3a" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="292" cy="71" r="10" fill="#c28d57"/>
+</svg>

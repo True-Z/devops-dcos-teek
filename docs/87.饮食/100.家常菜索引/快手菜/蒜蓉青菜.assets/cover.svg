@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="蒜蓉青菜 cover">
+  <rect width="360" height="200" rx="20" fill="#edf7ee"/>
+  <ellipse cx="180" cy="110" rx="118" ry="56" fill="#f3f4f6"/>
+  <ellipse cx="180" cy="110" rx="92" ry="38" fill="#fff"/>
+  <path d="M126 116 C148 88, 184 86, 224 114" stroke="#63a84d" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <circle cx="208" cy="92" r="6" fill="#f0e1b0"/>
+  <circle cx="222" cy="102" r="6" fill="#f0e1b0"/>
+</svg>

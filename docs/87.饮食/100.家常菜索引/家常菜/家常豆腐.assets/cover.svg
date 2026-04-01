@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="家常豆腐 cover">
+  <rect width="360" height="200" rx="20" fill="#f8efe7"/>
+  <ellipse cx="180" cy="110" rx="118" ry="56" fill="#f3f4f6"/>
+  <ellipse cx="180" cy="110" rx="92" ry="38" fill="#fff"/>
+  <rect x="132" y="90" width="26" height="18" rx="4" fill="#f3d7a9"/>
+  <rect x="166" y="110" width="26" height="18" rx="4" fill="#f0cf9f"/>
+  <rect x="200" y="94" width="26" height="18" rx="4" fill="#6aa54e"/>
+</svg>

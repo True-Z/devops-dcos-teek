@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="bowl illustration">
+  <rect width="320" height="180" rx="18" fill="#f4eef7"/>
+  <path d="M82 88 H238 C234 122 210 142 160 142 C110 142 86 122 82 88 Z" fill="#7d86d8"/>
+  <ellipse cx="160" cy="88" rx="78" ry="14" fill="#9fa7ea"/>
+</svg>

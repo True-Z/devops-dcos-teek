@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="green pepper illustration">
+  <rect width="320" height="180" rx="18" fill="#eef6ea"/>
+  <path d="M112 58 C132 44, 162 46, 178 62 C194 78, 192 112, 174 126 C156 140, 126 138, 112 120 C98 102, 96 72, 112 58 Z" fill="#5aa648"/>
+  <path d="M162 48 C162 38, 172 34, 182 38" stroke="#3f7a33" stroke-width="8" stroke-linecap="round"/>
+</svg>

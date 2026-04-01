@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="木耳炒蛋 cover">
+  <rect width="360" height="200" rx="20" fill="#f6f2eb"/>
+  <ellipse cx="180" cy="110" rx="118" ry="56" fill="#f3f4f6"/>
+  <ellipse cx="180" cy="110" rx="92" ry="38" fill="#fff"/>
+  <circle cx="154" cy="104" r="15" fill="#f0d56b"/>
+  <circle cx="196" cy="110" r="14" fill="#52403a"/>
+  <rect x="206" y="90" width="18" height="16" rx="4" fill="#6cad54"/>
+</svg>

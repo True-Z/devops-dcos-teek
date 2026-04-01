@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="凉拌豆腐丝 cover">
+  <rect width="360" height="200" rx="20" fill="#f6f3eb"/>
+  <ellipse cx="180" cy="110" rx="118" ry="56" fill="#f3f4f6"/>
+  <ellipse cx="180" cy="110" rx="92" ry="38" fill="#fff"/>
+  <path d="M130 114 C156 96, 184 94, 224 112" stroke="#e7dfc5" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M130 98 C154 86, 182 86, 220 100" stroke="#6fb561" stroke-width="8" stroke-linecap="round" fill="none"/>
+</svg>

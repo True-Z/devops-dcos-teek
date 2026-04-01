@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="pork illustration">
+  <rect width="320" height="180" rx="18" fill="#f8ecec"/>
+  <path d="M88 102 C92 70, 130 56, 180 58 C226 60, 252 80, 246 110 C240 136, 206 144, 160 140 C116 136, 84 126, 88 102 Z" fill="#e79ba1"/>
+  <path d="M118 74 C140 66, 176 66, 204 74" stroke="#fff2f2" stroke-width="10" stroke-linecap="round"/>
+</svg>

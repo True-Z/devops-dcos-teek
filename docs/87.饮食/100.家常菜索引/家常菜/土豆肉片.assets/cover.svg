@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200" role="img" aria-label="土豆肉片 cover">
+  <rect width="360" height="200" rx="20" fill="#f8efe7"/>
+  <ellipse cx="180" cy="110" rx="118" ry="56" fill="#f3f4f6"/>
+  <ellipse cx="180" cy="110" rx="92" ry="38" fill="#fff"/>
+  <path d="M128 110 C154 94, 180 94, 228 116" stroke="#d6ba71" stroke-width="11" stroke-linecap="round" fill="none"/>
+  <path d="M136 94 C156 84, 184 84, 212 98" stroke="#c98168" stroke-width="10" stroke-linecap="round" fill="none"/>
+</svg>

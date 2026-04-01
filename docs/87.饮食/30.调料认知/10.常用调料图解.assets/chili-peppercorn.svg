@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="chili and peppercorn illustration">
+  <rect width="320" height="180" rx="18" fill="#f9f3ed"/>
+  <path d="M90 60 C120 48, 142 74, 160 102" stroke="#c64231" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M142 54 C172 44, 200 70, 218 100" stroke="#d65d3f" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <circle cx="220" cy="122" r="8" fill="#684631"/>
+  <circle cx="244" cy="112" r="8" fill="#76513a"/>
+  <circle cx="260" cy="130" r="8" fill="#593d2c"/>
+</svg>

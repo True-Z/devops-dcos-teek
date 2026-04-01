@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160" role="img" aria-labelledby="title desc">
+  <title id="title">八字结示意图</title>
+  <desc id="desc">绳索绕成上下两个环的八字结示意图。</desc>
+  <rect width="320" height="160" rx="16" fill="#edf5f2"/>
+  <path d="M46 82 C90 82, 100 38, 146 38 C190 38, 196 82, 160 82 C126 82, 132 122, 176 122 C220 122, 226 82, 274 82" fill="none" stroke="#2f7f68" stroke-width="14" stroke-linecap="round"/>
+  <ellipse cx="144" cy="58" rx="28" ry="20" fill="none" stroke="#1f5e4d" stroke-width="8" opacity="0.85"/>
+  <ellipse cx="178" cy="102" rx="28" ry="20" fill="none" stroke="#1f5e4d" stroke-width="8" opacity="0.85"/>
+</svg>

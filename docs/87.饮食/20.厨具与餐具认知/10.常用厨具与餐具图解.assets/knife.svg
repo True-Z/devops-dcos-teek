@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="knife illustration">
+  <rect width="320" height="180" rx="18" fill="#f3f5f7"/>
+  <path d="M70 96 L210 66 L236 82 L90 108 Z" fill="#cfd6dd"/>
+  <rect x="210" y="72" width="58" height="24" rx="10" fill="#6f4a33"/>
+  <rect x="228" y="77" width="10" height="14" rx="4" fill="#8e6145"/>
+</svg>

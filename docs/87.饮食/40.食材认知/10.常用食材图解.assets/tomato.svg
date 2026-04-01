@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="tomato illustration">
+  <rect width="320" height="180" rx="18" fill="#f9efeb"/>
+  <circle cx="160" cy="92" r="42" fill="#dc5243"/>
+  <path d="M160 52 L168 66 L184 62 L176 76 L188 88 L170 88 L160 102 L150 88 L132 88 L144 76 L136 62 L152 66 Z" fill="#5b8b3f"/>
+</svg>
